@@ -2,8 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const port = process.env.PORT || 3000;
 
-var app = express();
-
+var app = express();1
 
 
 hbs.registerHelper('getCurrentYear',() => {
@@ -52,6 +51,8 @@ app.use((req, res, next) => {
 
 
 app.listen(port, () => {
-	console.log('Server is up on port ${port}');
+	//console.log('Server is up on port ${port}');
+	console.log('Server is up on port %d', port);
 });
+
 
