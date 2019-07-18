@@ -9,5 +9,10 @@
 		<p>{{screamIt welcomeMessage}}</p>
 		
 		{{> footer}}
+	<script>
+            // ask username
+            var username = prompt('Please tell me your name');
+            socket.emit('username', username);	
+	</script>
 	</body>
 </html>
